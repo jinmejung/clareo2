@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <title>clareo</title>
+    <!--@css(/layout/basic/css/common.css)-->
+    <!--@css(/layout/basic/css/layout.css)-->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+    <!--@css(/layout/basic/css/ec-base-table.css)-->
+    <!--@css(/layout/basic/css/ec-base-fold.css)-->
+    <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+    <!--@css(/css/swiper.min.css)-->
+
+    <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+    <!--@js(/layout/basic/js/common.js)-->
+    <!--@js(/js/swiper.min.js)-->
+ 
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body id="layout">
+    <div module="Popup_MultiPopup">
+        <!--
+            $banner_popup_no =
+            ※ 노출시킬 팝업의 ID를 숫자로 넣어주세요.
+        -->
+        {$popup}
+    </div>
+    <div module="Popup_MultiBanner">
+        <!--
+            $banner_popup_no =
+            ※ 노출시킬 배너의 ID를 숫자로 넣어주세요.
+        -->
+        {$banner}
+    </div>
+     <div id="wrap">
+        <!--@import(/layout/basic/sidebar.html)-->
+        <hr class="layout">
+        <div id="container">
+            <header id="header">
+                <div class="header">
+                    <section id="topArea">
+                        <div class="searchWrap">
+                            <!--p class="category"><a href="#none" class="fold"><i class="material-icons">menu</i></a></p-->
+                            <div class="category col">
+                               <a href="#none" class="fold">
+                                <div closs="btnClose" class="hamburger" id="hamburger">
+                                  <span class="line"></span>
+                                  <span class="line"></span>
+                                  <span class="line"></span>
+                                </div>
+                               </a>
+                            </div>
+                            <h1 module="Layout_LogoTop"><a href="/"><img src="/web/clareo/m_clareo_logo.png" alt="로고" /></a></h1>
+                            <!--p class="search"><button type="button"><i class="material-icons">search</i></button></p>
+                            <p module="Layout_orderBasketcount">
+                                <a href="/order/basket.html" class="btnBasket"><i class="material-icons">shopping_cart</i><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+                            </p-->
+                        </div>
+                        
+                    </section>
+                    <!--@import(/layout/basic/search.html)-->
+                </div>
+            </header>
+            <hr class="layout">
+            <div id="contents">
+                <!--@contents-->
+            </div>
+            <hr class="layout">
+            <!--@import(/layout/basic/footer.html)-->
+        </div>
+    </div>
+    <!--@js(/clareo/js/index.js)-->   
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        window.jQuery1_12_4 = jQuery.noConflict(true);
+    </script>
+</body>
+</html>

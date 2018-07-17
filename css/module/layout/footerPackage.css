@@ -1,0 +1,48 @@
+ /* footer */
+        .information{
+            margin-bottom:20px;
+        }
+        .information a{
+            margin-right:10px;
+            position:relative;
+        }
+        .information a+a:before{
+            content:'';
+            width:1px;
+            height:10px;
+            background-color:#555;
+            position:absolute;
+            top:62%;
+            transform: translateY(-60%);
+            left:-6px;
+            
+        }
+        #footer dl{
+            display:block;
+            font-size:10px;
+            line-height:1.8em;
+        }
+        #footer dl dt{
+            font-size:12px;
+            margin-bottom:15px;
+            font-weight:bold;
+        }
+        #footer .number{
+            color:#4b4b4b;
+            font-weight:bold;
+        }
+        #footer dl dd{
+            color:#777;
+             font-family:'Noto Sans KR','nanumgothic', sans-serif;
+        }
+        #footer dl:last-of-type{
+            margin-top:20px;
+        }
+        #footer p{
+            padding:15px 0;
+            color:#ababab;
+            margin-top:20px;
+            border-top:1px solid #ababab;
+        }
+    
+

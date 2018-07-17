@@ -1,0 +1,85 @@
+        
+        .shop_wrap{width:100%; height:100%; font-family: 'Noto Sans KR','nanumgothic',}
+        .shop_title h2{
+            font-size: 16px;
+            color: #917a6a;
+            text-transform: uppercase;
+            margin: 30px 0;
+            text-align: center;
+            font-family: 'Noto Sans KR',sans-serif;
+            font-weight: 500;
+        }
+        .prd_wrap{
+            padding:0;
+            background-color:#fff;
+            width:100%;
+        }
+        .prd_wrap .prd_list{
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 7px;
+            font-size: 0;
+            line-height: 0;
+        }
+        .prd_wrap .prd_list li{
+            width: 50%;
+            display: inline-block;
+            margin: 0 0 14px;
+            vertical-align: top;
+            text-align: center;
+            line-height: 1.4;
+        }
+        .prd_list li .thumbnail{
+            position: relative;
+            margin: 0 7px 14px;
+        }
+        .prd_list li .thumbnail .prd_img{
+            width:100%;
+        }
+        .prd_list li .thumbnail a{
+            display:block;
+        }
+        .prd_list li .thumbnail a img{
+            display: block;
+            width: 100%;
+            border: 1px solid #ededed;
+            vertical-align: top;
+            max-width: 100%;
+        }
+        
+        .prd_list li .thumbnail .description{
+            min-height: 10px;
+            margin: 10px 7px;
+            line-height: 1em;
+            text-align: center;
+        }
+        .prd_list li .thumbnail .description .name{
+            font-size: 13px;
+            line-height: 1.3em;
+            word-wrap: break-word;
+            margin: 0 0 7px;
+            
+        }
+        .prd_list li .thumbnail .description .name a{
+            font-family: 'Noto Sans KR',sans-serif;
+            color: #1b1b1b;
+            font-weight:400;
+            font-size: 13px;
+        }
+        .prd_list li .thumbnail .description .con_price{
+            font-size: 11px;
+            color: #777777;
+            text-decoration: line-through;
+            display: block;
+            line-height: 18px;
+            text-align: center;
+        }
+        .prd_list li .thumbnail .description .price{
+            font-size: 12px;
+            margin: 0 0 7px;
+            color: #917a6a;
+            font-weight: 600;
+            line-height: 13px;
+        }

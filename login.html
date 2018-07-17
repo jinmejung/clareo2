@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="layout/basic/css/common.css">       
+    <link rel="stylesheet" href="layout/basic/css/layout.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-ui.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-paginate.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-paginate.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-help.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-product.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-button.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-box.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-layer.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-table.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-fold.css">
+    <link rel="stylesheet" href="layout/basic/css/ec-base-prdInfo.css">
+    <link rel="stylesheet" href="layout/basic/css/slideMenu.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+     <link rel="stylesheet" href="css/module/member/login.css">
+    
+    <script src="layout/basic/js/common.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <style>
+            #header {position:relative !important;}
+            #layout #header .header {background-color:#917a6a !important;}
+        
+        #titleArea{border-bottom:0;}
+        #titleArea h2{color:#917a6a; font-size:22px;    font-family: 'Noto Sans KR','nanumgothic', sans-serif; font-weight:500;    padding: 20px 0 10px 0;}
+        input[type="button"], input[type="text"], input[type="password"], input[type="tel"], input[type="image"], textarea{  border: none;
+            border-bottom: 1px solid #ddd;
+            width: 100%;
+            height: 30px;
+            font-size: 12px;
+            color: #353535;
+            line-height: 18px;
+            font-weight: 300;}
+        
+    </style>
+    
+</head>
+<body id="layout">
+       <div id="wrap">
+            <aside id="aside" module="layout_slidePackage">
+                <div class="closeBtn"><a href="#none" closs="btnClose"><i class="material-icons">clear</i></a></div>
+                <div class="left_menu">
+                    <ul module="Layout_stateLogoff" class="member">
+                        <li><a href="login.html">LOGIN</a></li>
+                        <li><a href="#">JOIN US</a></li>
+                        <li><a href="#">ORDER</a></li>
+                    </ul>
+                    <ul class="gnb">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="collection.html">COLLECTION</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="#" class="open_sns">COMMUNITY <i class="fa fa-angle-down" style="font-size:15px"></i></a>
+                            <ul class="sub">
+                                <li><a href="https://www.instagram.com/clareo_official/" target="_blank">INSTAGRAM</a></li>
+                                <li><a href="https://www.facebook.com/%ED%81%B4%EB%9D%BC%EB%A0%88%EC%98%A4-1759348630768136/?modal=admin_todo_tour" target="_blank">FACEBOOK</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+            <script>
+                 $(document).ready(function(){
+                      $(".hamburger").click(function(){
+                        $(this).toggleClass("is-active");
+                      });
+                    });
+            </script>
+            
+            <hr class="layout">
+            <div id="container">
+                <header id="header">
+                    <div class="header">
+                        <section id="topArea">
+                            <div class="searchWrap">
+                                <div class="category col">
+                                   <a href="#none" class="fold">
+                                    <div closs="btnClose" class="hamburger" id="hamburger">
+                                      <span class="line"></span>
+                                      <span class="line"></span>
+                                      <span class="line"></span>
+                                    </div>
+                                   </a>
+                                </div>
+                                <h1 module="Layout_LogoTop"><a href="#"><img src="clareo/img/m_clareo_logo.png" alt="로고" /></a></h1>
+                            </div>
+
+                        </section>
+                    </div>
+                </header>
+                <hr class="layout">
+                <div id="contents" class="xans-member-login"> 
+                <div id="titleArea">
+                    <h2>CLAREO LOGIN</h2>
+                </div>
+                <div module="member_login" id="{$member_login_module_id}">
+                  
+                   <script src="js/module/member/login.js"></script>
+                    <!--
+                        $defaultReturnUrl = /index.html
+                    -->
+                    <!--주문조회-->
+                    <div class="loginWrap">
+                        
+                        <fieldset>
+                            <div class="formBox">
+                                <div class="form">
+                                    <ul>
+                                        <li><input id="member_id" name="member_id" fw-filter="isFill" fw-label="아이디" fw-msg="" class="inputTypeText" placeholder="ID" value="" type="text"></li>
+                                        <li><input id="member_passwd" name="member_passwd" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-label="패스워드" fw-msg="" value="" type="password" placeholder="PASSWORD"></li>
+                                    </ul>
+                                </div>
+                                <div class="ec-base-button gFull">
+                                    <button type="button" class="btnSubmit" onclick="{$action_func_login}">LOGIN</button>
+                                </div>
+                                <div class="loginUtil">
+                                    <a href="#" class="btnLogin">아이디찾기</a>
+                                    <a href="#" class="btnLogin">비밀번호찾기</a>
+                                    <a href="#" class="btnLogin">회원가입</a>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                     <!--//주문조회-->
+                </div>
+                </div>
+                <hr class="layout">
+                <footer module="layout_footerPackage">
+                    <link rel="stylesheet" href="css/module/layout/footerPackage.css">
+                        <div id="footer">
+                                <div class="information">
+                                    <a href="clareo/about.html">회사소개</a>
+                                    <a href="#">이용약관</a>
+                                    <a href="#" style="font-weight:bold;">개인정보처리방침</a>
+                                    <a href="#">이용안내</a>
+                                </div>
+                                <dl>
+                                    <dt>[ CUSTOMER CENTER ]</dt>
+                                    <dd class="number">1599-3735 (일반상담문의)</dd>
+                                    <dd>AM 11:00 - PM 16:00</dd>
+                                    <dd>(06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</dd>
+                                </dl>
+                                <dl>
+                                    <dt>[ COMPANY INFO ]</dt>
+                                    <dd>Trade : (주)트랜드메카 / CEO : 서대규 / TEL : 1599-3735</dd>
+                                    <dd>Permit Number : 113-86-48435 <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a> </dd>
+                                    <dd>Fax : 02-6455-2581 / Mail-Order : 2016-서울강남02846호</dd>
+                                    <dd>Address : (06107) 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층</dd>
+                                    <dd>Privacy Manager : 서대규/ E-mail : trendmecca@hotmail.com</dd>
+                                </dl>
+                                <p>
+                                    Copyright (C) 2018 Trendmecca. All rights reserved.
+                                </p>
+                            </div>
+                    </footer>
+            </div>
+        </div>
+</body>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="clareo/js/index.js"></script>
+</html>
