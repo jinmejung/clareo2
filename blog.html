@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
+    <title>blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="layout/basic/css/slideMenu.css">
     <link rel="stylesheet" href="css/swiper.min.css">
      <link rel="stylesheet" href="css/module/member/login.css">
+     
+    <link rel="stylesheet" href="css/blog.css">
     
     <script src="layout/basic/js/common.js"></script>
     <script src="js/swiper.min.js"></script>
@@ -33,17 +35,7 @@
             #header {position:relative !important;}
             #layout #header .header {background-color:#917a6a !important;}
         
-        #titleArea{border-bottom:0;}
-        #titleArea h2{color:#917a6a; font-size:22px;    font-family: 'Noto Sans KR','nanumgothic', sans-serif; font-weight:500;    padding: 20px 0 10px 0;}
-        input[type="button"], input[type="text"], input[type="password"], input[type="tel"], input[type="image"], textarea{  border: none;
-            border-bottom: 1px solid #ddd;
-            width: 100%;
-            height: 30px;
-            font-size: 12px;
-            color: #353535;
-            line-height: 18px;
-            font-weight: 300;}
-        
+
     </style>
     
 </head>
@@ -104,40 +96,54 @@
                     </div>
                 </header>
                 <hr class="layout">
-                <div id="contents" class="xans-member-login"> 
-                <div id="titleArea">
-                    <h2>CLAREO LOGIN</h2>
-                </div>
-                <div module="member_login" id="{$member_login_module_id}">
-                  
-                   <script src="js/module/member/login.js"></script>
-                    <!--
-                        $defaultReturnUrl = /index.html
-                    -->
-                    <!--주문조회-->
-                    <div class="loginWrap">
-                        
-                        <fieldset>
-                            <div class="formBox">
-                                <div class="form">
-                                    <ul>
-                                        <li><input id="member_id" name="member_id" fw-filter="isFill" fw-label="아이디" fw-msg="" class="inputTypeText" placeholder="ID" value="" type="text"></li>
-                                        <li><input id="member_passwd" name="member_passwd" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-label="패스워드" fw-msg="" value="" type="password" placeholder="PASSWORD"></li>
-                                    </ul>
-                                </div>
-                                <div class="ec-base-button gFull">
-                                    <button type="button" class="btnSubmit" onclick="{$action_func_login}">LOGIN</button>
-                                </div>
-                                <div class="loginUtil">
-                                    <a href="#" class="btnLogin">아이디찾기</a>
-                                    <a href="#" class="btnLogin">비밀번호찾기</a>
-                                    <a href="#" class="btnLogin">회원가입</a>
-                                </div>
-                            </div>
-                        </fieldset>
+                <div id="contents"> 
+                    <div class="Sub_title" id="post_blog">
+                        <h2>Blog</h2>
                     </div>
-                     <!--//주문조회-->
-                </div>
+                    <!--div class="blog_submit_top"><a href="/board/free/list.html?board_no=5">블로그 서포터즈 신청</a></div-->
+
+                    <div class="imgArea">
+                        <a href="#"><img src="clareo/img/blog_top_banner.jpg" alt="" /></a>
+                    </div>
+                    <div class="event">
+                            <h3>Blog Suppoters</h3>
+                            <p>개인 블로그를 운영하는 모든 분들이라면 <br>누구나 참여 가능하며, 모집을 통해 선발합니다.<br>
+                                이 달의 블로거로 선정되신분께는 <br><span>10% 할인쿠폰을 지급해드립니다:D</span>
+                            </p>
+                            <a href="#">블로그 서포터즈 신청</a>
+                        </div>
+
+
+                    <div class="blog">
+
+                        <ul class="blog_menu">
+                            <li class="_m blog_menu_on">2018 S/S</li>
+                            <!--li class="_m">2017 F/W</li>
+                            <li class="_m">2017 S/S</li-->
+                        </ul>
+
+                        <h2 class="title">Recommend Posting</h2>
+                        <div class="blog_contents blog_contents1">
+                           <!--div class="blog_content">
+                                  <a href="https://blog.naver.com/wather3548/221299118773" target="_blank">
+                                       <div class="blog_img"><img src="/web/clareo/blog/test.jpg" alt=""></div>
+                                       <span class="blog_text">
+                                         <h2>Blogger :<b>응지의하루</b></h2>
+                                         <span class="content">여자 손목시계 추천 깔끔해서 딱 좋은뎅?</span>
+                                         <span class="date">2018 in Korea</span>
+                                     </span>
+                                   </a>
+                             </div-->
+                        </div>
+                        <div class="blog_contents blog_contents2"> <!--2017 f/w-->
+
+                        </div><!--2017 f/w end-->
+
+                        <div class="blog_contents blog_contents3"> <!--2017 s/s-->
+
+                        </div><!--2017 s/s end-->
+                      </div>
+
                 </div>
                 <hr class="layout">
                 <footer module="layout_footerPackage">
